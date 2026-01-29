@@ -1,18 +1,14 @@
-//Importar el módulo HTTP
-const http = requere('http');
+// Importar el modulo HTTP
+const http = require('http');
 
-//Definir el puerto en que se ejecitara el servidor
-const PORT = 300;
+//Definir el puerto en que se ejecutara el servidor
+const PORT = 3000;
 
-//Crear el servidor 
+const servidor = http.createServer((req, res) => {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hola Mundo desde Node.js ');
+});
 
-const servidor = http.createServer ((req, res) => {
-    res.WriteHead(200, { 'ContentType' : 'text/plain'});
-
-    res.end('Hola mundo desde Node.js.');
-} );
-
-servidor.listen(PORT, () =>{
-    console.log('El servidor está corriendo en el puerto ${PORT}');
-})
-
+servidor.listen(PORT, () => {
+    console.log(`El servidor esta corriendo en el puerto ${PORT}`);
+});
