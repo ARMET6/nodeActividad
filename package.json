@@ -1,0 +1,21 @@
+{
+  "name": "nodeactividad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARMET6/nodeActividad.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ARMET6/nodeActividad/issues"
+  },
+  "homepage": "https://github.com/ARMET6/nodeActividad#readme"
+}
